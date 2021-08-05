@@ -5,22 +5,17 @@ class Library {
 
     addBookToLibrary(newBook) {
         this.myLibrary.push(newBook);
-    }
+        const collection = document.querySelector('.collection');
 
-    getAllBooks() {
-        this.myLibrary.forEach(book => {
-            const collection = document.querySelector('.collection');
+        const bookContainer = document.createElement('div');
+        bookContainer.classList.add('card', 'mx-2', 'col-md-auto');
 
-            const bookContainer = document.createElement('div');
-            bookContainer.classList.add('card', 'mx-2', 'col-md-auto');
+        const bookProfile = document.createElement('div');
+        bookProfile.classList.add('card-text', 'overflow-hidden');
+        bookProfile.textContent = newBook.title;
 
-            const bookProfile = document.createElement('div');
-            bookProfile.classList.add('card-text', 'overflow-hidden');
-            bookProfile.textContent = book.title;
-
-            bookContainer.appendChild(bookProfile);
-            collection.appendChild(bookContainer);
-        })
+        bookContainer.appendChild(bookProfile);
+        collection.appendChild(bookContainer);
     }
 }
 
