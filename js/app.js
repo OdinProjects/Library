@@ -9,3 +9,4 @@ addBook.onclick = () => {
     const newBook = new Book(title.value);
     myLibrary.addBookToLibrary(newBook);
 }
+
