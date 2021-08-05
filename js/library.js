@@ -2,11 +2,7 @@ class Library {
     constructor() {
         this.myLibrary = [];
     }
-
-    addNewBook(newBook) {
-        const collection = document.querySelector('#addButton');
-    }
-
+    
     addBookToLibrary(newBook) {
         this.myLibrary.push(newBook);
         const collection = document.querySelector('.collection');
