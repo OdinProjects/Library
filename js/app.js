@@ -17,4 +17,3 @@ myLibrary.addBookToLibrary(newBook3);
 myLibrary.addBookToLibrary(newBook4);
 myLibrary.addBookToLibrary(newBook5);
 myLibrary.addBookToLibrary(newBook6);
-myLibrary.getAllBooks();
